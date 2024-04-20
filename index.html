@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DARSA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trydrop.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap">
 </head>
 <body>
@@ -20,7 +20,8 @@
     <form action="newnew.html" method="get">
         <div class="search-container">
             <div class="search-wrapper">
-                <input type="text" class="search-input" name="search" placeholder="Search Location...">
+                <input type="text" class="search-input" name="search" placeholder="Search Location..." oninput="showSuggestions(this.value)">
+                <div class="suggestions-box"></div>
                 <button type="submit" class="search-button">Search</button>
             </div>
         </div>
@@ -31,5 +32,6 @@
             <p>For more info: <img src="gmail.png" alt="Footer Image"> <span><a href="mailto:darsa.aam@gmail.com">darsa.aam@gmail.com</a></span></p>
         </footer>        
     </div>
+    <script src="trydrop.js"></script>
 </body>
 </html>
